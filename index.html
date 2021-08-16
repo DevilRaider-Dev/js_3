@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+  <form action="">
+    <fieldset>
+      <input type="text" name="" id="input">
+      <input type="button" value="Check Input" onclick="checkInput()">
+      <div id="output"></div>
+    </fieldset>
+  </form>
+
+  <form action="">
+    <fieldset>
+      <div>
+        <input type="text" name="playerA_age" id="playerA_age" placeholder="Player A Age">
+        <input type="text" name="playerB_age" id="playerB_age" placeholder="Player B Age">
+      </div>
+      <div>
+        <input type="text" name="playerA_size" id="playerA_size" placeholder="Player A Size">
+        <input type="text" name="playerB_size" id="playerB_size" placeholder="Player B Size">
+      </div>
+      <input type="button" value="Calculate" onclick="calcPoints()">
+      <p style="background-color: grey; color: white;" id="result">Result</p>
+    </fieldset>
+  </form>
+
+  <form action="">
+    <div style="text-align: center; margin-top: 20vh;">
+      <p id="aqi">AQI:</p>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="150" value="75" class="slider" id="aqiSlider" onchange="checkAirQuality()">
+        <h3 id="levelConcern">Level of health concern:</h3>
+        <h3 id="levelEffect">Level of health Effect:</h3>
+      </div>
+    </div>
+  </form>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
